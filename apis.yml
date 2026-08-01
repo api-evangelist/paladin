@@ -1,7 +1,29 @@
 aid: paladin
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/paladin.png
 name: Paladin
-description: Paladin is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Paladin is a legal technology company whose software platform connects the
+  pro bono community and empowers legal teams to run pro bono programs more
+  efficiently. The platform provides centralized program management dashboards,
+  volunteer matching that connects attorneys to pro bono opportunities based on
+  interest and expertise, and impact measurement that visualizes and reports on
+  program outcomes across a nationwide network of legal services organizations,
+  law firms, in-house legal teams, law schools, and bar associations. Customers
+  include Clifford Chance, Dentons, Holland & Knight, and Wilson Sonsini.
+  Paladin is a Techstars portfolio company. It exposes a customer-facing web
+  application at app.joinpaladin.com but does not publish a public developer
+  API, OpenAPI specification, SDKs, or developer documentation at this time.
 url: https://raw.githubusercontent.com/api-evangelist/paladin/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Legal
+- Legal Technology
+- Pro Bono
+- Legal Services
+- Volunteer Management
+- Program Management
+- Compliance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/paladin-domain-security.yml
 - type: Website
   url: https://joinpaladin.com/
+- type: Blog
+  url: https://www.joinpaladin.com/pro-bono-blog/
+- type: TermsOfService
+  url: https://www.joinpaladin.com/terms/
+- type: PrivacyPolicy
+  url: https://www.notion.so/Paladin-Privacy-Policy-3de5306088204bf5aed6700efda81dd3
+- type: Support
+  url: https://www.joinpaladin.com/contact/
+- type: Login
+  url: https://app.joinpaladin.com/account/login/
+- type: SignUp
+  url: https://www.joinpaladin.com/request-demo/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
